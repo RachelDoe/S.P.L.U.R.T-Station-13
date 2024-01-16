@@ -2873,7 +2873,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 				if("sexual_potency")
 					var/sexual_pot = input(user, "Set your sexual potency. \n(-1 = minimum, 25 = maximum.) This determines the number of times your character can orgasm before becoming impotent, use -1 for no impotency.", "Character Preference", sexual_potency) as num|null
 					if(sexual_pot)
-						sexual_potency = clamp(sexual_pot, -1, 25)
+						sexual_potency = clamp(sexual_pot, -1, 25) // Splurt EDIT: New minimum = -1
 
 				if("cock_color")
 					var/new_cockcolor = input(user, "Penis color:", "Character Preference","#"+features["cock_color"]) as color|null
